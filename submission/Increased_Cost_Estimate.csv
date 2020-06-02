@@ -1,0 +1,21 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,157.86,1894.32,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),Elastic Load Balancing,0,4112.42,49349.04,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Amazon EC2,0,1565.76,18789.12,USD,"Operating system (Linux), Quantity (71), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (t3.medium)"
+My Estimate,US East (N. Virginia),S3 Standard,0,64.89,778.68,USD,S3 Standard storage (1 TB per month)
+My Estimate,US East (N. Virginia),S3 Standard - Infrequent Access,0,11.61,139.32,USD,S3 Infrequent Access storage (49 GB per month)
+My Estimate,US East (N. Virginia),Data Transfer,0,921.51,11058.12,USD,"Data Transfer, Data transfer cost (921.51)"
+My Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,3356.2760000000003,40275.31,USD,"Quantity (1), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.r5.large), Additional backup storage (30 TB)"
+My Estimate,US East (Ohio),Amazon RDS for MySQL,0,3313.8630000000003,39766.36,USD,"Quantity (1), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.m5.large), Additional backup storage (30 TB)"
+My Estimate,US East (Ohio),Amazon EC2,0,463.11,5557.32,USD,"Operating system (Linux), Quantity (21), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (t3.medium)"
+My Estimate,US East (Ohio),Amazon ElastiCache,51936,4305.54,103602.48,USD,(3 instances)  Memcached  Memory optimized  cache r4.16xlarge  Reserved  Heavy Utilization  1yr
+
+
+
+"AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+An additional budget was used to improve backups, redundancy and caching:
+1) Database backup storage increased
+2) Database read replica added in another region (Ohio) to survive region outage
+3) Amount of EC2 instances in the main region (N.Virgina) increased
+4) Added some running ready-to-go instances in the second region (Ohio)
+5) Amazon ElastiCache instances added
