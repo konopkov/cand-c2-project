@@ -1,11 +1,20 @@
 Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,157.86,1894.32,USD,Number of NAT Gateways (2)
-My Estimate,US East (N. Virginia),Elastic Load Balancing,0,4112.42,49349.04,USD,Number of Application Load Balancers (1)
-My Estimate,US East (N. Virginia),Amazon EC2,0,1368.09,16417.08,USD,"Operating system (Linux), Quantity (41), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (t3.medium)"
-My Estimate,US East (N. Virginia),S3 Standard,0,1218.94,14627.28,USD,S3 Standard storage (50 TB per month)
-My Estimate,US East (N. Virginia),Data Transfer,0,921.51,11058.12,USD,"Data Transfer, Data transfer cost (921.51)"
-My Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,683.2,8198.40,USD,"Quantity (1), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.r5.large), Additional backup storage (1 TB)"
+My Estimate,US East (N. Virginia),Amazon EC2,0,1161.28,13935.36,USD,"Operating system (Linux), Quantity (4), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (m5.2xlarge)"
+My Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,526.5,6318.00,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),Elastic Load Balancing,0,2758.18,33098.16,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),S3 Standard,0,1207.95,14495.40,USD,S3 Standard storage (50 TB per month)
+My Estimate,US East (Ohio),Data Transfer,0,921.51,11058.12,USD," Inbound (from: Internet) 10 TB per month 
+ Outbound (to: Internet) 10 TB per month 
+"
+My Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,2144.64,25735.68,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Additional backup storage (10 TB)"
+My Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,614.31,7371.72,USD," Inbound (from: Internet) 5 TB per month 
+ Outbound (to: Internet) 5 TB per month 
+ Outbound (to: All other regions) 5 TB per month 
+ Intra-Region 5 TB per month 
+"
 
 
 
 "AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+https://calculator.aws/#/estimate?id=1064ac9656654daf6ab45c3a28addbcbc270cefb
